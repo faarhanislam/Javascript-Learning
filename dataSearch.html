@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="findItem" placeholder="search item" />
+    <button onclick="searchData()">Search</button>
+    <script>
+      //   let item = 4;
+      let index;
+      function searchData() {
+        let data1 = [10, 20, 4, 15, 70, 40, 30];
+        for (let i = 0; i < data1.length; i++) {
+          const item = document.getElementById("findItem").value;
+          if (data1[i] == item) {
+            index = i;
+            console.log(index);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
